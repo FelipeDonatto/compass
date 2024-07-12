@@ -1,21 +1,11 @@
-
 # Instruções
 
-
-Neste arquivo você irá apresentar suas entregas referentes ao desafio final. 
-O desafio está presente em cada sprint ao longo do estágio. Utilize o diretório "Desafio" para organizar seus artefatos e este README.md para fazer referência aos arquivos de código-fonte e demais entregáveis solicitados.
-
+Para criar corretamente as tabelas será necessário utilizar os scripts anexados abaixo na tabela concessionaria em seu modelo original.
 
 # Etapas
 
+1. Normalização da tabela
+   [Etapa I](./etapa-1/entrega.sql)
 
-1. ...
-[Etapa I](etapa-1/entrega.txt)
-
-
-2. ...
-[Etapa II](etapa-2/entrega.txt)
-
-
-
-
+2. Criação das dimensões
+   [Etapa II](./etapa-2/entrega.sql)
