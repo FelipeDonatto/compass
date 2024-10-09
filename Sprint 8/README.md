@@ -1,43 +1,32 @@
+### Perguntas que escolhi com base nas animações com melhores avaliações
 
-# Instruções
+1. **Do top 100 animações mais bem avaliadas, quantos são japoneses?**
 
-Neste arquivo você irá apresentar suas entregas da Sprint corrente. Observe que existem 4 diretórios no exemplo: **exercícios**, **certificados** e **evidências**.
+2. **Entre os melhores avaliados, como os filmes de `Evangelion` se comparam aos demais?**
 
- - O diretório **exercícios** corresponde ao local onde você irá adicionar o código-fonte das atividades de codificação da Sprint, quando houver.
- - O diretório **evidências** você pode utilizar para adicionar imagens demonstrando a execução/resultados de atividades, quando necessário.
- - O diretório **certificados** é o local onde você irá armazenar os certificados dos cursos solicitados durante a sprint. O nome de cada certificado de corresponder ao título do curso.
- - O diretório **desafio** é o local onde você irá armazenar a resolução do que se pede no desafio, todos recursos que você considerar importante deverá está dentro desse diretório.
+3. **Quantos filmes do Studio Ghibli estão no top 100? E no top 10?**
 
-Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Faça referência aos arquivos de código-fonte. Evite colocar código diretamente no Markdown pois dificulta nossa avaliação.
-
+4. **Animações japonesas geralmente têm avaliações superiores às de outros países? Qual é a média das avaliações de animações japonesas em comparação com a média mundial?**
 
 # Exercícios
 
+1. EXERCÍCIO DE SPARK BATCH
+   [Resposta Ex1.](exercicios/spark_batch_step01-02.py)
+   [Resposta Ex1.1](exercicios/spark_batch_step03.py)
 
-1. ...
-[Resposta Ex1.](exercicios/ex1.txt)
-
-
-2. ...
-[Resposta Ex2.](exercicios/ex2.txt)
-
-
-
+2. EXERCÍCIO DE MANIPULAÇÃO DE DADOS COM SPARK
+   [Resposta Ex2.](exercicios/apache_spark.py)
 
 # Evidências
 
+#### APÓS CRIAR OS PARQUETS NO BUCKET
 
-Ao executar o código do exercício ... observei que ... conforme podemos ver na imagem a seguir:
+![Evidencia 3](./evidencias/parquets_in_bucket.png)
 
+#### LOGS DA CRIAÇÂO DOS PARQUETS DO JSON
 
-![Evidencia 1](evidencias/sample.webp)
+![Evidencia 2](./evidencias/logs_json_script.png)
 
+#### LOGS DA CRIAÇÂO DOS PARQUETS DOS CSVS
 
-
-# Certificados
-
-
-- Certificado do Curso ABC
-![Curso ABC](certificados/sample.png)
-
-
+![Evidencia 1](./evidencias/logs_csv_scripts.png)
