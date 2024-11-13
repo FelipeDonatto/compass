@@ -6,7 +6,7 @@ import os
 from botocore.exceptions import ClientError
 import datetime
 
-api_key = 'xxxx'
+api_key ='0076e4c84828553848a19f027f6eb1ed'
 s3_client = boto3.client(
     's3',
     aws_access_key_id="xxxx",
@@ -21,7 +21,7 @@ params = {
     'sort_by': 'vote_average.desc', 
     'with_genres': '16', 
     'vote_count.gte': 1000, 
-    'language': 'pt-BR', 
+    'language': 'en-US', 
     'page': 1  
 }
 
@@ -57,12 +57,20 @@ def lambda_handler(event, context):
     top_animations = get_top_rated_animations(api_key, num_results=100)
     json_data = json.dumps(top_animations, ensure_ascii=False, indent=4)
 
-    try:
-        response = s3_client.put_object(Body=json_data, Bucket=bucket_name, Key=f'Raw/TMDB/JSON/{get_date()}/melhores_animacoes.json', ContentType='application/json')
-    except ClientError as e:
-        print(e)
-        return {
-            'statusCode': 500,
-            'body': json.dumps('Erro ao salvar arquivo no S3.')
-        }
-    return True
+    #escreva o json nesta pasta
+    with open(f'./melhores_animacoes2.json', 'w', encoding='utf-8') as f:
+        json.dump(top_animations, f, ensure_ascii=False, indent=4)
+        
+
+    
+    # try:
+    #     response = s3_client.put_object(Body=json_data, Bucket=bucket_name, Key=f'Raw/TMDB/JSON/{get_date()}/melhores_animacoes.json', ContentType='application/json')
+    # except ClientError as e:
+    #     print(e)
+    #     return {
+    #         'statusCode': 500,
+    #         'body': json.dumps('Erro ao salvar arquivo no S3.')
+    #     }
+    # return True
+
+lambda_handler(None, None)
